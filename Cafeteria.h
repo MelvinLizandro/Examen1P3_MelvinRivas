@@ -1,15 +1,18 @@
 #pragma once
 #include <iostream>
-using namespace std;
-#include <vector>
-#include "Bebida.h"
-#include <stdio.h>     
-#include <stdlib.h>    
 #include <time.h>  
+#include <stdlib.h>    
+#include <stdio.h>     
+#include "Bebida.h"
+#include <vector>
+using namespace std;
+
 class Cafeteria
 {
-	vector <Bebida*> bebidas;
+	vector<Bebida> bebidas;
 public:
-	void Agregar_bebida();
+	void Agregar_bebida(); 
+	void MostrarDatos(); 
+	void Facturación();
 };
 

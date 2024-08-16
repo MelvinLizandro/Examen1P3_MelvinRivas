@@ -4,26 +4,30 @@ using namespace std;
 #include <stdlib.h>    
 #include <time.h>   
 #include "Cafeteria.h"
+#include "Venta.h"
 
 void cafeteria() {
+	Cafeteria cafe ;
+	Venta venta;
 	int opciones = 0;
 	while (opciones != 5)
 	{
-		cout << "---- Cafeteria ----" << endl << "1. Crear cafeteria" << "2. Listar bebidas" <<
-			"3. Facturacion" << endl << "4. Mostrar ventas" << endl << "5. Regresar al menu";
+		cout << "---- Cafeteria ----" << endl << "1. Crear cafeteria" <<endl <<  "2. Listar bebidas" <<
+			  endl <<"3. Facturacion" << endl << "4. Mostrar ventas" << endl << "5. Regresar al menu" <<
+			endl << "Cual desea elegir: ";
+		cin >> opciones;
 		switch (opciones)
 		{
 		case 1: {
-			Cafeteria* cafe = new Cafeteria;
-			cafe ->Agregar_bebida();
+			cafe.Agregar_bebida();
 			break;
 		}
 		case 2: {
-
+			cafe.MostrarDatos();
 			break;
 		}
 		case 3: {
-
+			
 			break;
 		}
 		case 4: {
