@@ -7,8 +7,7 @@ using namespace std;
 #include "Venta.h"
 
 void cafeteria() {
-	Cafeteria cafe ;
-	Venta venta;
+	Cafeteria cafe;
 	int opciones = 0;
 	while (opciones != 5)
 	{
@@ -16,10 +15,11 @@ void cafeteria() {
 			  endl <<"3. Facturacion" << endl << "4. Mostrar ventas" << endl << "5. Regresar al menu" <<
 			endl << "Cual desea elegir: ";
 		cin >> opciones;
+		
 		switch (opciones)
 		{
 		case 1: {
-			cafe.Agregar_bebida();
+			 cafe.Agregar_bebida();
 			break;
 		}
 		case 2: {
@@ -27,18 +27,19 @@ void cafeteria() {
 			break;
 		}
 		case 3: {
-			
+			cafe.Facturacion(1);
 			break;
 		}
 		case 4: {
-
+			cafe.Facturacion(2);
 			break;
 		}
 		case 5: {
-
+			cout << "Gracias por su preferencia, hasta la proxima";
 			break;
 		}
 		default: {
+			cout << "Caracter incorrecto, porfavor vuelva a intentarlo";
 			break;
 		}
 		}

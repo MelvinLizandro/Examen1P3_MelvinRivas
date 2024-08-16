@@ -10,9 +10,10 @@ using namespace std;
 class Cafeteria
 {
 	vector<Bebida> bebidas;
+	
 public:
 	void Agregar_bebida(); 
 	void MostrarDatos(); 
-	void Facturación();
+	void Facturacion(int);
 };
 

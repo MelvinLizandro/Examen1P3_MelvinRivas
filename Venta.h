@@ -5,11 +5,14 @@ using namespace std;
 #include <vector>
 class Venta
 {
-private:
-	vector <Bebida*> Ventas;
 public:
-	void Agregarventa();
+	vector <Bebida> Ventas;
+public:
+	Venta(string, double);
+	Venta();
+	void Agregarventa(string,double);
 	void Facturación();
 	void Mostrar_ventas();
+	
 };
 

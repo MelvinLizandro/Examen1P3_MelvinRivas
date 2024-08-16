@@ -1,5 +1,10 @@
 #include "Bebida.h"
 
+Bebida::Bebida(string nombre_, double precio_) {
+	bebida = nombre_;
+	precio = precio_;
+}
+
 Bebida::Bebida(string bebida_, double costo_, double ivs_) {
 	bebida = bebida_;
 	costo = costo_;

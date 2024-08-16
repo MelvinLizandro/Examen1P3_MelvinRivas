@@ -12,8 +12,10 @@ private:
 	double costo;
 	double ivs ;
 	double precio;
+	
 public:
 	Bebida(string,double,double);
+	Bebida(string, double);
 	string get_bebida();
 	double get_costo();
 	double get_precio();
