@@ -57,6 +57,7 @@ void Cafeteria::Facturacion(int numero) {
 	}
 	else if (numero == 2) {
 		  ven.Mostrar_ventas();
+		  //no pude
 	}
 }
 
